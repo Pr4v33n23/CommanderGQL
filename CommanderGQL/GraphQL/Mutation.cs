@@ -12,7 +12,7 @@ public class Mutation
     public async Task<AddPlatformPayload> AddPlatformAsync(AddPlatformInput input,
                                     [ScopedService] AppDbContext context,
                                     [Service] ITopicEventSender eventSender,
-                                    CancellationToken cancellationToken
+                                    CancellationToken cancellationToken 
                                     )
     {
         var platform = new Platform
